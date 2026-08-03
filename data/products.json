@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Helm KYT Kyoto",
+    "category": "Ride",
+    "badge": "🔥 BEST SELLER",
+    "rating": "4.9",
+    "price": "Rp399.000",
+    "image": "assets/products/helm-kyt.jpg",
+    "review": "Nyaman dipakai harian dan ventilasinya bagus.",
+    "affiliate": "https://shope.ee/contoh1"
+  },
+  {
+    "id": 2,
+    "name": "Manual Grinder",
+    "category": "Brew",
+    "price": "Rp279.000",
+    "image": "assets/products/grinder.jpg",
+    "review": "Cocok untuk V60 dan French Press.",
+    "affiliate": "https://shope.ee/contoh2"
+  },
+  {
+    "id": 3,
+    "name": "Penghitam body motor",
+    "category": "Ride",
+    "price": "Rp39.000",
+    "image": "assets/products/penghitam.jpg",
+    "review": "body meling meling seperti baru.",
+    "affiliate": "https://shope.ee/contoh3"
+  },
+  {
+    "id": 4,
+    "name": "kopi bowongso",
+    "category": "Brew",
+    "price": "Rp40.000",
+    "image": "assets/products/bowongso.jpg",
+    "review": "Cocok untuk V60 dan French Press.",
+    "affiliate": "https://shope.ee/contoh4"
+  },
+  {
+    "id": 5,
+    "name": "buku mewarnai",
+    "category": "Digital",
+    "price": "Rp399.000",
+    "image": "assets/products/mewarnai.jpg",
+    "review": "Nyaman dipakai harian dan mencerdaskan anak bunda.",
+    "affiliate": "https://shope.ee/contoh5"
+  },
+  {
+    "id": 6,
+    "name": "resep masakan bunda",
+    "category": "Digital",
+    "price": "Rp80.000",
+    "image": "assets/products/resep.jpg",
+    "review": "bunda semog tambah pinter masak.",
+    "affiliate": "https://shope.ee/contoh6"
+  }
+]
