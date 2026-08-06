@@ -1,58 +1,68 @@
 [
   {
     "id": 1,
-    "name": "Helm KYT Kyoto",
+    "name": "Penghitam Body Motor / Mobil Permanen - Dohero The New Black",
     "category": "Ride",
     "badge": "🔥 BEST SELLER",
     "rating": "4.9",
-    "price": "Rp399.000",
-    "image": "assets/products/helm-kyt.jpg",
-    "review": "Nyaman dipakai harian dan ventilasinya bagus.",
-    "affiliate": "https://shope.ee/contoh1"
+    "price": "Rp34.000",
+    "image": "assets/products/penghitam.jpg",
+    "review": "Mengembalikan warna hitam seperti baru dan memberikan efek daun talas yang kuat pada bodi kasar motor / mobil",
+    "affiliate": "https://s.shopee.co.id/7KvxZ7LhFB"
   },
   {
     "id": 2,
-    "name": "Manual Grinder",
-    "category": "Brew",
-    "price": "Rp279.000",
-    "image": "assets/products/grinder.jpg",
-    "review": "Cocok untuk V60 dan French Press.",
-    "affiliate": "https://shope.ee/contoh2"
+    "name": "STOPLAMP LAZY BEAT DELUXE GEN 2 PNP TINGGAL COLOK",
+    "category": "Ride",
+    "badge": "🔥 BEST SELLER",
+    "rating": "4.9",
+    "price": "Rp283.220",
+    "image": "assets/products/stoplamp.jpg",
+    "review": "rem full merah + mode sen running sudah PNP full soket. Mika smoke ayato, LED pakai AES, MANTAP BETUUL",
+    "affiliate": "https://s.shopee.co.id/5ArSzgyYG6"
   },
   {
     "id": 3,
-    "name": "Penghitam body motor",
-    "category": "Ride",
-    "price": "Rp39.000",
-    "image": "assets/products/penghitam.jpg",
-    "review": "body meling meling seperti baru.",
-    "affiliate": "https://shope.ee/contoh3"
+    "name": "ARUTALA Kopi Arabika Gayo  Arabica Coffee 100 gram",
+    "category": "Brew",
+    "badge": "🔥 BEST SELLER",
+    "rating": "4.9",
+    "price": "Rp46.900",
+    "image": "assets/products/arabikagayo.jpg",
+    "review": "wangi kopi tercium kuat bahkan sebelum di seduh, cocok untuk ngopi santai di kantor atau di rumah",
+    "affiliate": "https://s.shopee.co.id/5q79naamlX"
   },
   {
     "id": 4,
-    "name": "kopi bowongso",
+    "name": "One Two Cups V60 Coffee Dripper Alat Seduh Kopi Manual Brew Keramik - ZM-639 - Hitam",
     "category": "Brew",
-    "price": "Rp40.000",
-    "image": "assets/products/bowongso.jpg",
-    "review": "Cocok untuk V60 dan French Press.",
-    "affiliate": "https://shope.ee/contoh4"
+    "badge": "🔥 BEST SELLER",
+    "rating": "4.9",
+    "price": "Rp50.900",
+    "image": "assets/products/otcdripper.jpg",
+    "review": "keren banget buat ngopi kalcer di rumah atau di kantor bahan kramik dan tebel mantap bangett",
+    "affiliate": "https://s.shopee.co.id/9ANbmEAtXA"
   },
   {
     "id": 5,
-    "name": "buku mewarnai",
-    "category": "Digital",
-    "price": "Rp399.000",
-    "image": "assets/products/mewarnai.jpg",
-    "review": "Nyaman dipakai harian dan mencerdaskan anak bunda.",
-    "affiliate": "https://shope.ee/contoh5"
+    "name": "NEXOR Kertas Filter Saringan Kopi V60 Drip 1 - 2 Serve 100 PCS Coklat Putih/Coffee Paper Filter",
+    "category": "Brew",
+    "badge": "🔥 BEST SELLER",
+    "rating": "4.9",
+    "price": "Rp27.000",
+    "image": "assets/products/nexorfilter.jpg",
+    "review": "kertasnya tebel dan gak bauk, rekomen banget buat kopi v60",
+    "affiliate": "https://s.shopee.co.id/4AyvpBeWXr"
   },
   {
     "id": 6,
-    "name": "resep masakan bunda",
-    "category": "Digital",
-    "price": "Rp80.000",
-    "image": "assets/products/resep.jpg",
-    "review": "bunda semog tambah pinter masak.",
-    "affiliate": "https://shope.ee/contoh6"
+    "name": "Filter Saring Kopi Vietnam Coffee Drip Pot 50ml 100ml Vietnamese Perlengkapan Barista",
+    "category": "Brew",
+    "badge": "🔥 BEST SELLER",
+    "rating": "4.9",
+    "price": "Rp19.700",
+    "image": "assets/products/vietnamdrip.jpg",
+    "review": "recommended banget buat ngopi estetik di rumah atau di kantor",
+    "affiliate": "https://s.shopee.co.id/5LAtDkX8sK"
   }
 ]
