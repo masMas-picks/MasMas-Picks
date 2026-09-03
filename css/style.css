@@ -4,82 +4,118 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #0D1117;
-    color: white;
-    font-family: Inter, sans-serif;
-    padding: 20px;
-    min-height: 100vh;
+:root {
+    --bg: #0b0f14;
+    --surface: #121820;
+    --surface-2: #171f29;
+    --border: #222c38;
+    --text: #f5f7fa;
+    --muted: #8b96a5;
+    --blue: #6ea8ff;
+    --blue-dark: #2563eb;
+    --orange: #ee4d2d;
+    --orange-hover: #ff5a3c;
+    --gold: #ffc107;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(37, 99, 235, 0.08),
+            transparent 35%
+        ),
+        var(--bg);
+    color: var(--text);
+    font-family: Inter, sans-serif;
+    padding: 0 20px;
+    min-height: 100vh;
+}
 
 /* =========================
    NAVBAR
 ========================= */
 
 .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
 }
 
 .logo-img {
-    width: 170px;
-    max-width: 80%;
+    width: 165px;
+    max-width: 75%;
+    display: block;
 }
-
 
 /* =========================
    HERO
 ========================= */
 
 .hero {
-    max-width: 900px;
-    margin: 35px auto 0;
+    max-width: 850px;
+    margin: 65px auto 0;
     text-align: center;
 }
 
 .badge {
     display: inline-block;
-    padding: 8px 14px;
-    background: #1B263B;
-    border-radius: 30px;
-    font-size: 13px;
-    color: #6EA8FF;
+    padding: 8px 15px;
+    background: rgba(37, 99, 235, 0.12);
+    border: 1px solid rgba(110, 168, 255, 0.18);
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: var(--blue);
     margin-bottom: 25px;
 }
 
 .hero h1 {
+    max-width: 800px;
+    margin: 0 auto 20px;
     font-family: Poppins, sans-serif;
-    font-size: 42px;
-    line-height: 1.2;
-    margin-bottom: 18px;
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.12;
+    letter-spacing: -1.5px;
 }
 
 .hero p {
-    max-width: 500px;
+    max-width: 560px;
     margin: auto;
-    color: #9CA3AF;
+    color: var(--muted);
+    font-size: 15px;
     line-height: 1.8;
 }
 
 .explore {
-    display: inline-block;
-    margin-top: 35px;
-    padding: 15px 30px;
-    background: #EE4D2D;
-    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    padding: 14px 25px;
+    background: var(--orange);
+    border-radius: 13px;
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.25s ease;
+    box-shadow: 0 8px 25px rgba(238, 77, 45, 0.18);
 }
 
 .explore:hover {
     transform: translateY(-3px);
+    background: var(--orange-hover);
+    box-shadow: 0 12px 30px rgba(238, 77, 45, 0.25);
 }
-
 
 /* =========================
    SEARCH
@@ -87,252 +123,273 @@ body {
 
 .search {
     max-width: 900px;
-    margin: 35px auto 0;
+    margin: 55px auto 0;
 }
 
 .search input {
     width: 100%;
-    padding: 15px 18px;
-    border: none;
+    padding: 17px 20px;
+    border: 1px solid var(--border);
     outline: none;
     border-radius: 15px;
-    background: #161B22;
+    background: rgba(18, 24, 32, 0.9);
     color: white;
-    font-size: 16px;
+    font-size: 15px;
+    transition: 0.25s ease;
 }
 
 .search input::placeholder {
-    color: #6B7280;
+    color: #667181;
 }
 
 .search input:focus {
-    box-shadow: 0 0 0 2px #2563EB;
+    border-color: rgba(110, 168, 255, 0.6);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
-
 /* =========================
-   KATEGORI
+   CATEGORY
 ========================= */
 
 .kategori {
     max-width: 900px;
-    margin: 25px auto;
+    margin: 20px auto 0;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 9px;
     overflow-x: auto;
-    padding-bottom: 5px;
+    padding: 3px 2px 8px;
+    scrollbar-width: none;
+}
+
+.kategori::-webkit-scrollbar {
+    display: none;
 }
 
 .kategori button {
-    border: none;
-    padding: 12px 18px;
-    border-radius: 30px;
-    background: #1B263B;
-    color: white;
+    border: 1px solid var(--border);
+    padding: 10px 17px;
+    border-radius: 999px;
+    background: var(--surface);
+    color: #d8dee7;
     cursor: pointer;
     white-space: nowrap;
-    transition: 0.3s;
+    font-size: 13px;
+    transition: 0.25s ease;
 }
 
 .kategori button:hover {
-    background: #2563EB;
+    border-color: #315b9e;
+    color: white;
 }
 
 .kategori button.active {
-    background: #2563EB;
+    background: var(--blue-dark);
+    border-color: var(--blue-dark);
+    color: white;
 }
 
-
 /* =========================
-   JUDUL
+   SECTION TITLE
 ========================= */
 
 .judul {
     max-width: 1200px;
-    margin: 40px auto 20px;
-    font-size: 22px;
-    font-weight: bold;
+    margin: 55px auto 22px;
     font-family: Poppins, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
 }
 
-
 /* =========================
-   PRODUK
+   PRODUCT GRID
 ========================= */
 
 .produk {
-    max-width: 1200px;
+    max-width: 1120px;
     margin: auto;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 18px;
 }
 
-
 /* =========================
-   CARD
+   PRODUCT CARD
 ========================= */
 
 .card {
-    background: #161B22;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    transition: 0.3s;
     position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    transform: translateY(-5px);
+    border-color: #304052;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
-
 /* =========================
-   GAMBAR PRODUK
+   PRODUCT IMAGE
 ========================= */
 
 .gambar {
     width: 100%;
-    height: 200px;
+    height: 190px;
     overflow: hidden;
-    background: #111827;
+    background: #0f141b;
 }
 
 .gambar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.4s;
     display: block;
+    transition: transform 0.4s ease;
 }
 
 .card:hover .gambar img {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
-
 /* =========================
-   INFORMASI PRODUK
+   PRODUCT INFO
 ========================= */
 
 .card h3 {
-    margin: 18px 15px 0;
+    margin: 17px 15px 0;
+    min-height: 45px;
     font-family: Poppins, sans-serif;
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 600;
+}
+
+.rating {
+    margin: 10px 15px 0;
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .review {
-    margin: 12px 15px;
-    color: #B8B8B8;
+    margin: 9px 15px 0;
+    min-height: 42px;
+    color: var(--muted);
+    font-size: 12px;
     line-height: 1.6;
-    font-size: 13px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .harga {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 12px 15px 0;
-    color: #6EA8FF;
+    margin: 13px 15px 0;
+    color: var(--blue);
+    font-size: 19px;
+    font-weight: 700;
 }
 
-
 /* =========================
-   RATING
-========================= */
-
-.rating {
-    color: #FFC107;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0 15px;
-}
-
-
-/* =========================
-   BADGE PRODUK
+   BADGE
 ========================= */
 
 .badge-card {
     position: absolute;
-    top: 12px;
-    left: 12px;
-    background: #ff6b00;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 999px;
-    font-size: 11px;
-    font-weight: bold;
+    top: 11px;
+    left: 11px;
     z-index: 2;
+
+    padding: 6px 10px;
+    background: rgba(238, 77, 45, 0.95);
+    color: white;
+    border-radius: 999px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
-
 /* =========================
-   BUTTON AFFILIATE
+   AFFILIATE BUTTON
 ========================= */
 
 .card a {
     display: block;
     margin: 15px;
-    padding: 14px;
+    padding: 12px;
+
     text-align: center;
-    background: #EE4D2D;
-    color: #fff;
+    background: var(--orange);
+    color: white;
+
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 11px;
+
+    font-size: 13px;
     font-weight: 700;
-    transition: 0.3s;
+
+    transition: 0.25s ease;
 }
 
 .card a:hover {
-    background: #ff5a3c;
+    background: var(--orange-hover);
     transform: translateY(-2px);
 }
-
 
 /* =========================
    FOOTER
 ========================= */
 
 footer {
-    max-width: 1200px;
-    margin: 60px auto 20px;
-    padding-top: 25px;
-    border-top: 1px solid #242B35;
+    max-width: 1120px;
+    margin: 65px auto 20px;
+    padding: 25px 0 10px;
+
+    border-top: 1px solid var(--border);
+
     text-align: center;
-    color: #6B7280;
-    font-size: 12px;
+    color: #687383;
+
+    font-size: 11px;
     line-height: 1.8;
 }
-
 
 /* =========================
    TABLET
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
     .produk {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
 }
 
-
 /* =========================
-   HP
+   MOBILE
 ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     body {
-        padding: 15px;
+        padding: 0 15px;
+    }
+
+    .navbar {
+        padding: 20px 0;
     }
 
     .logo-img {
@@ -340,45 +397,91 @@ footer {
     }
 
     .hero {
-        margin-top: 30px;
+        margin-top: 45px;
     }
 
     .hero h1 {
-        font-size: 30px;
+        font-size: 32px;
+        letter-spacing: -0.8px;
     }
 
     .hero p {
         font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .search {
+        margin-top: 45px;
+    }
+
+    .kategori {
+        justify-content: flex-start;
+    }
+
+    .judul {
+        margin-top: 45px;
+        font-size: 19px;
     }
 
     .produk {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .gambar {
+        height: 175px;
+    }
+
+    .card h3 {
+        margin: 14px 12px 0;
+        min-height: 43px;
+        font-size: 13px;
+    }
+
+    .rating {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .review {
+        margin-left: 12px;
+        margin-right: 12px;
+        font-size: 11px;
+    }
+
+    .harga {
+        margin-left: 12px;
+        margin-right: 12px;
+        font-size: 17px;
+    }
+
+    .card a {
+        margin: 12px;
+        padding: 11px 8px;
+        font-size: 12px;
+    }
+}
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media (max-width: 430px) {
+
+    .produk {
         grid-template-columns: 1fr;
-        gap: 18px;
+        gap: 16px;
     }
 
     .gambar {
         height: 220px;
     }
 
-    .judul {
-        font-size: 20px;
+    .card h3 {
+        font-size: 14px;
     }
 
-}
-
-
-/* =========================
-   HP KECIL
-========================= */
-
-@media (max-width: 380px) {
-
-    .hero h1 {
-        font-size: 27px;
+    .review {
+        min-height: auto;
     }
-
-    .explore {
-        padding: 13px 25px;
-    }
-
 }
