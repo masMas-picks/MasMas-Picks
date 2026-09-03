@@ -1,106 +1,126 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MasMas Picks</title>
+    <title>MasMas Picks</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
 
-<header class="navbar">
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <img
+            src="assets/logo/logo.png"
+            class="logo-img"
+            alt="MasMas Picks"
+        >
+    </header>
 
-    <img src="assets/logo/logo.png" class="logo-img">
 
-</header>
+    <!-- HERO -->
+    <section class="hero">
 
-<section class="hero">
+        <span class="badge">
+            Trusted Product Recommendation
+        </span>
 
-    <span class="badge">
-        Trusted Product Recommendation
-    </span>
+        <h1>
+            We only recommend
+            products worth buying.
+        </h1>
 
-    <h1>
+        <p>
+            Temukan rekomendasi pilihan untuk
+            ACC Motor, Coffee Gear,
+            dan Produk Digital.
+        </p>
 
-        We only recommend
-        products worth buying.
+        <a href="#produk" class="explore">
+            Explore Picks
+        </a>
 
-    </h1>
+    </section>
 
-    <p>
 
-        Temukan rekomendasi pilihan untuk
-        ACC Motor,
-        Coffee Gear,
-        dan Produk Digital.
+    <!-- SEARCH -->
+    <section class="search">
 
-    </p>
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Cari produk favoritmu..."
+            autocomplete="off"
+        >
 
-    <a href="#produk" class="explore">
+    </section>
 
-        Explore Picks
 
-    </a>
+    <!-- KATEGORI -->
+    <section class="kategori">
 
-</section>
+        <button data-category="All">
+            Semua
+        </button>
 
-<section class="search">
+        <button data-category="Ride">
+            🏍 Ride
+        </button>
 
-<input
-    type="text"
-    id="search"
-    placeholder="🔍 Cari produk favoritmu...">
+        <button data-category="Brew">
+            ☕ Brew
+        </button>
 
-</section>
+        <button data-category="Digital">
+            💻 Digital
+        </button>
 
-<section class="kategori">
+    </section>
 
-<button data-category="All">Semua</button>
 
-<button data-category="Ride">🏍 Ride</button>
+    <!-- JUDUL PRODUK -->
+    <section class="judul">
+        🔥 Pilihan MasMas
+    </section>
 
-<button data-category="Brew">☕ Brew</button>
 
-<button data-category="Digital">💻 Digital</button>
+    <!-- PRODUK -->
+    <section
+        class="produk"
+        id="produk"
+    >
+        <!-- Produk akan otomatis dimuat oleh app.js -->
+    </section>
 
-</section>
 
-<section class="judul">
+    <!-- FOOTER -->
+    <footer>
 
-🔥 Pilihan MasMas
+        <p>
+            © 2026 MasMas Picks
+        </p>
 
-</section>
+        <p>
+            Trusted Product Recommendation
+            • Affiliate Disclosure
+        </p>
 
-<section class="produk" id="produk">
+    </footer>
 
-</section>
 
-<h3>Helm KYT Kyoto</h3>
+    <!-- JAVASCRIPT -->
+    <script src="js/app.js"></script>
 
-<p class="review">
-💬 MasMas Says
-
-<br><br>
-
-<footer>
-  <p>© 2026 MasMas Picks</p>
-  <p>Trusted Product Recommendation • Affiliate Disclosure</p>
-</footer>
-</a>
-
-</div>
-
-</section>
-<script src="js/app.js"></script>
 </body>
-
 </html>
